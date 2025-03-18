@@ -2,7 +2,7 @@
 
 echo "Defining variables..."
 # Domain name
-DOMAIN="webssh.wyl-online.de"
+DOMAIN="test.wyl-online.de"
 
 # Email for notifications and recovery
 EMAIL="admin@wyl-online.de"
