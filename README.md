@@ -27,4 +27,4 @@ cd webssh
 bash install.sh
 ```
 
-#### if the installation was successful, webssh is reachable in your browser via https://<domain>.<tld>
+#### if the installation was successful, webssh is reachable in your browser via https://domain.tld
