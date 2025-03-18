@@ -37,7 +37,9 @@ systemctl enable --now nginx
 
 ######################################################
 
-echo "Requesting certificate"
+echo "Requesting certificate..."
+echo "Stopping nginx..."
+systemctl stop nginx
 certbot certonly --standalone --non-interactive --agree-tos --email "$EMAIL" -d "$DOMAIN"
 
 ######################################################
@@ -49,6 +51,8 @@ else
     echo ">> Failed to obtain the certificate."
     exit 1
 fi
+
+systemctl start nginx
 
 ######################################################
 
