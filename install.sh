@@ -28,7 +28,10 @@ pip3 install --break-system-packages webssh
 ######################################################
 
 echo "Setting up ufw rules..."
+ufw allow ssh
 ufw allow "Nginx Full"
+
+ufw enable
 
 ######################################################
 
